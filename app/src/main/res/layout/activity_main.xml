@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.brounie.sayer.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            layout="@layout/toolbar"/>
+
+
+
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+            android:id="@+id/armadorasList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+
+    <include android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/activity_upload_data"
+        android:visibility="gone"
+        />
+
+
+
+
+
+
+</RelativeLayout>

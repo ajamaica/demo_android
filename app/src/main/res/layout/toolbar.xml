@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:namespace="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:id="@+id/tool">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/icon_izq"
+                android:src="@mipmap/back"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <com.brounie.sayer.Utils.TypefacedTextView
+                namespace:typeface="Raleway-SemiBold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tittle"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/icon_der"
+                android:src="@drawable/logo"
+                android:layout_marginRight="10dp"
+                android:padding="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/search"
+            android:padding="7dp"
+            android:id="@+id/lupa"
+            android:layout_centerVertical="true"
+            />
+        <com.brounie.sayer.Utils.TypefacedEditText
+            namespace:typeface="Raleway-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHint="@android:color/darker_gray"
+            android:hint="Buscar"
+            android:paddingLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"
+            android:layout_centerVertical="true"
+            android:id="@+id/search"
+            android:imeOptions="actionDone"
+            android:background="@drawable/background_search"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

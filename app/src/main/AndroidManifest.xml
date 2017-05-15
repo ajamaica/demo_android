@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.brounie.sayer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--android:roundIcon="@mipmap/ic_launcher_round"-->
+    <application
+        android:name=".App.App"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.ActivitySplash"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Activities.ColoresActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.PerfilColorActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Sayer</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="tittle_armadora">Armadora</string>
+    <string name="loading">Cargando...</string>
+    <string name="tittle_color">Color</string>
+    <string name="total">Total:</string>
+    <string name="fondo">Fondo:</string>
+    <string name="acomulado">Acomulado</string>
+    <string name="gramos">Cantidad (gr)</string>
+
+    <string-array name="medidas_arrays">
+        <item>ml</item>
+        <item>Lt</item>
+    </string-array>
+
+
+    <string-array name="armadoras">
+        <item>acura</item>
+        <item>audi</item>
+        <item>bmw</item>
+        <item>chrysler</item>
+        <item>fiat</item>
+        <item>ford</item>
+        <item>generalmotors</item>
+        <item>honda</item>
+        <item>hyundai</item>
+        <item>kia</item>
+        <item>mazda</item>
+        <item>mercedesbenz</item>
+        <item>mitsubishi</item>
+        <item>nissan</item>
+        <item>peugeot</item>
+        <item>porsche</item>
+        <item>renault</item>
+        <item>seat</item>
+        <item>subaru</item>
+        <item>suzuki</item>
+        <item>toyota</item>
+        <item>volvo</item>
+    </string-array>
+
+</resources>

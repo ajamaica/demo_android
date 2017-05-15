@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:namespace="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/item">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/color"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/logo"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <com.brounie.sayer.Utils.TypefacedTextView
+            namespace:typeface="Raleway-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtName"
+            android:textColor="@color/txt"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:layout_gravity="center_vertical" />
+
+        <com.brounie.sayer.Utils.TypefacedTextView
+            namespace:typeface="Raleway-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/material"
+            android:textColor="@color/txt"
+            android:singleLine="true"
+            android:textSize="12sp"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <com.brounie.sayer.Utils.TypefacedTextView
+        namespace:typeface="Raleway-Regular.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/porc"
+        android:textColor="@color/txt"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:textSize="13sp"
+        android:gravity="center_vertical"
+        />
+
+    <com.brounie.sayer.Utils.TypefacedTextView
+        namespace:typeface="Raleway-Regular.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/porcNew"
+        android:textColor="@color/txt"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="13sp"
+        android:gravity="center_vertical"
+        />
+
+</LinearLayout>

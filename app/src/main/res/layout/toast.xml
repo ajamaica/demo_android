@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:background="@color/colorAccent"
+
+    >
+
+    <com.brounie.sayer.Utils.TypefacedTextView
+        xmlns:namespace="http://schemas.android.com/apk/res/com.brounie.sayer"
+        namespace:typeface="Raleway-SemiBold.ttf"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>
